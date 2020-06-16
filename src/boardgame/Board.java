@@ -29,7 +29,13 @@ public class Board {
 		this.columns = columns;
 	}
 	
+	public Piece piece (int row, int column) {
+		return pieces [row][column];
+	}
 	
+	public Piece piece (Position position) { //sobrecarga do metodo anterior
+		return pieces [position.getRow()][position.getColumn()];
+	}
 	
 	
 
