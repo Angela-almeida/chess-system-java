@@ -52,9 +52,9 @@ public class Board {
 		if (piece(position) == null) {
 			return null;
 		}
-		Piece aux = piece (position);
-		aux.position = null; // remoção da peça. a peça já não tem posição
-		pieces[position.getRow()][position.getColumn()] = null;//nesta posição da matriz já não há peça
+		Piece aux = piece(position);
+		aux.position = null;
+		pieces[position.getRow()][position.getColumn()] = null;
 		return aux;
 	}
 	
